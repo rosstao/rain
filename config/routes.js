@@ -3,8 +3,10 @@
  */
 'use strict';
 
-const router = require('../routes');
+const api = require('../routes/api');
+const page = require('../routes/page');
 
 module.exports = (app)=> {
-    app.use(router);
+    app.use('/', page);
+    app.use('/api', api);
 }

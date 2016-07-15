@@ -4,7 +4,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const config = require('../config');
+const config = require('../config/appConfig');
 
 const db = mongoose.createConnection(config.MongoSettings.mongodbAddress + '/' + config.MongoSettings.mongodbName, {
     server: {poolSize: 20}
@@ -15,7 +15,4 @@ const db = mongoose.createConnection(config.MongoSettings.mongodbAddress + '/' +
     }
 });
 
-exports.Test = db.model('Test', require('./test'), 'test');
-
-
-
+exports.User = require('./user')(db);

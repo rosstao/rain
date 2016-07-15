@@ -3,7 +3,7 @@
  */
 'use strict';
 
-const config = require('../config');
+const config = require('../config/appConfig');
 const env = process.env.NODE_ENV || "development";
 const log4js = require('log4js');
 

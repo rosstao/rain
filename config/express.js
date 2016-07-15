@@ -12,8 +12,10 @@ const path = require('path');
 
 module.exports = (app)=> {
     app.set('views', path.join(__dirname, '../views'));   //设置页面模板路径
-    app.set('view engine', 'pug');  //设置模板引擎
+    //app.set('view engine', 'pug');  //设置模板引擎
+    app.set('view engine', 'ejs');
     app.use(logger('combined'));
+
 
     app.use(bodyParser.json()); //解析request请求
     app.use(bodyParser.urlencoded({extended: false}));

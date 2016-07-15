@@ -9,7 +9,8 @@ const config = {
     MongoSettings: {
         mongodbAddress: 'mongodb://127.0.0.1:27017',
         mongodbName: 'test'
-    }
+    },
+    AUTH_COOKIE_NAME: 'SEMIOE'
 }
 
 module.exports = config;

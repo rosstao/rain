@@ -13,10 +13,14 @@
     "co-express": "^1.2.1",
     "connect-redis": "^3.1.0",
     "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.2",
+    "eventproxy": "^0.3.4",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
+    "html": "0.0.10",
     "log4js": "^0.6.37",
     "mongoose": "^4.5.4",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta3"
   }
 }
