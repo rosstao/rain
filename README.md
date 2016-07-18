@@ -15,8 +15,9 @@ for pharmaceutical factory
 
 * 对model、controller、routers、service进行更细化分层
 * 对自己负责模块在相应层下新建一个目录，每个操作划分为一个文件，通过文件下index注册，然后在各层根目录index中注册
---------------------------------------------------
+
 * JSHint 代码验证
+--------------------------------------------------
 * .jshintignore 代码验证配置
 * .jshintrc 代码验证排除目录
 * npm run pretest  验证项目
