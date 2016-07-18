@@ -1,20 +1,25 @@
 /**
  * Created by xuyx on 2016/7/12.
  */
-'use strict';
+(()=>{
+    'use strict';
+    const config = require('../config/app_config');
+    const env = process.env.NODE_ENV || 'development';
+    const log4js = require('log4js');
 
-const config = require('../config/appConfig');
-const env = process.env.NODE_ENV || "development";
-const log4js = require('log4js');
+    log4js.configure({
+        appenders: [
+            { type: 'console' },
+            { type: 'file', filename: 'logs/rabbit.log', category: 'rabbit' }
+        ]
+    });
 
-log4js.configure({
-    appenders: [
-        { type: 'console' },
-        { type: 'file', filename: 'logs/rabbit.log', category: 'rabbit' }
-    ]
-});
+    var logger = log4js.getLogger('rabbit');
+    logger.setLevel(config.debug && env !== 'test' ? 'DEBUG' : 'ERROR')
 
-var logger = log4js.getLogger('rabbit');
-logger.setLevel(config.debug && env !== 'test' ? 'DEBUG' : 'ERROR')
+    module.exports = logger;
+})()
 
-module.exports = logger;
+
+
+

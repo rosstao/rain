@@ -1,11 +1,14 @@
 /**
  * Created by xuyx on 2016/7/12.
  */
-'use strict';
+(()=>{
+    'use strict';
 
-const express = require('express');
-const router = express.Router();
+    const express = require('express');
+    const router = express.Router();
 
-router.use('/user',require('./user'))
+    router.use('/user',require('./user'))
 
-module.exports = router;
+    module.exports = router;
+})()
+

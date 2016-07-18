@@ -1,10 +1,13 @@
 /**
  * Created by xuyx on 2016/7/15.
  */
-'use strict';
+(()=>{
+    'use strict';
 
-const express = require('express');
-const router = express.Router();
+    const express = require('express');
+    const router = express.Router();
 
 
-module.exports = router;
+    module.exports = router;
+})()
+

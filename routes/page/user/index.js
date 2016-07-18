@@ -1,17 +1,20 @@
 /**
  * Created by xuyx on 2016/7/15.
  */
-'use strict';
+(()=>{
+    'use strict';
 
-const express = require('express');
-const router = express.Router();
+    const express = require('express');
+    const router = express.Router();
 
-router.use(require('./login'));
-router.use(require('./register'));
-router.use(require('./logout'));
-router.use(require('./home'));
-router.get('/', (req, res, next)=> {
-    res.render('index', {title: 'Express'});
-})
+    router.use(require('./login'));
+    router.use(require('./register'));
+    router.use(require('./logout'));
+    router.use(require('./home'));
+    router.get('/', (req, res)=> {
+        res.render('index', {title: 'Express'});
+    })
 
-module.exports = router;
+    module.exports = router;
+})()
+

@@ -1,6 +1,9 @@
 /**
  * Created by xuyx on 2016/7/15.
  */
-'use strict';
+(()=> {
+    'use strict';
 
-exports.User = require('./user');
+    exports.User = require('./user');
+})()
+

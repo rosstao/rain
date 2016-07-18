@@ -1,18 +1,21 @@
 /**
  * Created by xuyx on 2016/7/14.
  */
-'use strict';
+(()=>{
+    'use strict';
 
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+    const mongoose = require('mongoose');
+    const Schema = mongoose.Schema;
 
-let UserSchema = new Schema({
-    name: String,   //ÓÃ»§Ãû
-    real_name: String,  //ĞÕÃû
-    password: String,   //ÃÜÂë
-    age: Number,    //ÄêÁä
-    birthday: {type: Date}, //³öÉúÈÕÆÚ
-    create_at: {type: Date, default: Date.now}  //´´½¨ÈÕÆÚ
-});
+    let UserSchema = new Schema({
+        name: String,   //ç”¨æˆ·å
+        real_name: String,  //çœŸå®å§“å
+        password: String,   //å¯†ç 
+        age: Number,    //å¹´é¾„
+        birthday: {type: Date}, //ç”Ÿæ—¥
+        create_at: {type: Date, default: Date.now}  //åˆ›å»ºæ—¶é—´
+    });
 
-module.exports = UserSchema;
+    module.exports = UserSchema;
+})()
+
