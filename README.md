@@ -18,8 +18,8 @@ for pharmaceutical factory
 
 * JSHint 代码验证
 --------------------------------------------------
-* .jshintignore 代码验证配置
-* .jshintrc 代码验证排除目录
+* .jshintignore 代码验证排除目录
+* .jshintrc 代码验证配置
 * npm run pretest  验证项目
 * 项目代码规范
 * 1.使用 ECMAScript 6 标准
